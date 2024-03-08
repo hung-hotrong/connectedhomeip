@@ -23,6 +23,8 @@ ARG USERNAME=vscode
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 ENV LANG en_US.utf8
+ENV http_proxy http://localhost:3128
+ENV https_proxy http://localhost:3128
 
 # these are installed for terminal/dev convenience.  If more tooling for build is required, please
 #  add them to chip-build (in integrations/docker/images/chip-build)
